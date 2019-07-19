@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1>Ejercicio 6</h1>
+
+    <form action="ejercicio-6.php" id="form-imc" method="post">
+        <div>
+            <label for="paciente">Nombre del paciente</label>
+            <input type="text" name="paciente" id="paciente" required autofocus>
+        </div>
+        <div>
+            <label for="peso">Peso en kilogramos</label>
+            <input type="number" name="peso" id="peso" min="0" required>
+        </div>
+        <div>
+            <label for="estatura">Estatura en centimetros</label>
+            <input type="number" name="estatura" id="estatura" min="0" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </div>
+    </form>
+</body>
+</html>

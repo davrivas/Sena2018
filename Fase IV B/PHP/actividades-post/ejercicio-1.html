@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+
+    <form action="ejercicio-1.php" id="form-peliculas" method="post" enctype="multipart/form-data" name="form-peliculas">
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo" required autofocus>
+        </div>
+        <div>
+            <label for="director">Director</label>
+            <input type="text" name="director" id="director" required>
+        </div>
+        <div>
+            <label for="genero">Género</label>
+            <select name="genero" id="genero" required>
+                <option value="Comedia">Comedia</option>
+                <option value="Drama">Drama</option>
+                <option value="Acción">Acción</option>
+                <option value="Terror">Terror</option>
+                <option value="Suspenso">Suspenso</option>
+                <option value="Otros">Otros</option>
+            </select>
+        </div>
+        <div>
+            <label for="year">Año</label>
+            <input type="text" id="year" name="year" maxlength="4" required>
+        </div>
+        <div>
+            <label for="duracion">Duración</label>
+            <input type="text" id="duracion" name="duracion" maxlength="3"required>
+        </div>
+        <div>
+            <label for="caratula">Carátula</label>
+            <input type="file" id="caratula" name="caratula" accept="image/*" required>
+        </div>
+        <div>
+            <input type="submit" value="Introducir datos de la película" id="enviar" name="enviar">
+        </div>
+    </form>
+</body>
+</html>

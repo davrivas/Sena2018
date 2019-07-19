@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+
+    <form action="ejercicio-2.php" id="form-tienda" method="post">
+        <div>
+            <label for="producto1">Producto 1</label>
+            <input type="text" name="producto1" id="producto1" required autofocus>
+        </div>
+        <div>
+            <label for="producto2">Producto 2</label>
+            <input type="text" name="producto2" id="producto2" required>
+        </div>
+        <div>
+            <label for="producto3">Producto 3</label>
+            <input type="text" name="producto3" id="producto3" required>
+        </div>
+        <div>
+            <label for="iva">IVA</label>
+            <select name="iva" id="iva">
+                <option value="8">8%</option>
+                <option value="16">16%</option>
+                <option value="19">19%</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Calcular valor productos" id="enviar" name="enviar">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+
+    <form action="ejercicio-3.php" id="form-universidad" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" autofocus>
+        </div>
+        <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+        </div>
+        <div>
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion">
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" id="telefono" maxlength="10">
+        </div>
+        <div>
+            <label for="genero">Género</label><br>
+            <input type="radio" id="femenino" name="genero" value="Femenino"><label for="femenino">Femenino</label><br>
+            <input type="radio" id="masculino" name="genero" value="Masculino"><label for="masculino">Masculino</label><br>
+            <input type="radio" id="otro" name="genero" value="Otro"><label for="otro">Otro</label><br>
+        </div>
+        <div>
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+        </div>
+        <div>
+            <input type="submit" value="Registrar alumno" id="enviar" name="enviar">
+        </div>
+    </form>
+</body>
+</html>
